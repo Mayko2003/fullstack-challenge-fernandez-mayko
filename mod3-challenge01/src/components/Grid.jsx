@@ -26,7 +26,7 @@ export const Grid = () => {
                 </div>
             </div>
             
-            <div className="mt-5 d-flex row">
+            <div className="mt-5 d-flex row mx-3">
                 {
                     charList.map((char) => (
                         <Item {...char} setCurrent={setCurrent} />
