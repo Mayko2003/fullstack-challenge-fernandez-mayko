@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+    font-family: 'Comfortaa';
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.color-square {
+    text-shadow: 0 0 3px #000000;
+    width: 300px;
+    display: inline-block;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    padding: 40px;
+    margin: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.color-square:hover {
+    box-shadow: 0 0 10px #686868;
+}
+
+.page {
+    height: 100vh;
+}
+
+.loading-text {
+    font-size: 50px;
+    font-weight: bold;
+}
