@@ -11,10 +11,11 @@ export class Item extends Component {
 
     render() {
         return (
-            <div className="card m-1 border-3 border-secondary" style={{ width: "20em" }} key={this.props.id} onClick={() => { this.props.setCurrent(this.props.image) }}>
+            <div className="card m-1 border-3 border-secondary" style={{ width: "20em" }} onClick={() => { this.props.setCurrent(this.props.image) }}>
                 <img src={this.props.image} className="card-img-top" alt="No hay imagen" />
                 <div className="card-body">
                     <h5 className="card-title">{this.props.name} <span className="text-info">{this.props.status}</span></h5>
+                    <p className="text-secondary">{this.props.species}</p>
                 </div>
             </div>
         )

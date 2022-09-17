@@ -29,7 +29,7 @@ export const Grid = () => {
             <div className="mt-5 d-flex row mx-3">
                 {
                     charList.map((char) => (
-                        <Item {...char} setCurrent={setCurrent} />
+                        <Item {...char} key={char.id} setCurrent={setCurrent} />
                     ))
                 }
             </div>
